@@ -1,0 +1,65 @@
+@baseUrl=http://localhost:5000/api
+@resourceName=foods
+# Foods
+
+# @name getAllFoods
+GET {{baseUrl}}/{{resourceName}}    
+# GET {{baseUrl}}/foods/9a929e7a-9859-4e77-9177-9e2c95276ba8
+
+###
+
+# @name filterFoods
+
+GET {{baseUrl}}/{{resourceName}}?merchantId=0edcbd78-d1a6-4b3b-a97c-94d48951988e&price_lte=200
+
+###
+
+# @name filterFoods
+
+# GET {{baseUrl}}/{{resourceName}}?name_like=Rubber 
+GET {{baseUrl}}/{{resourceName}}?id=2fkdjHB 
+
+###
+
+# @name pagination
+
+GET {{baseUrl}}/{{resourceName}}?_page=1&_limit=3
+
+###
+
+# @name sort
+
+GET {{baseUrl}}/{{resourceName}}?_sort=price&_order=desc
+
+
+### 
+
+# @name addFood
+
+Post {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    "merchantId": "0edcbd78-d1a6-4b3b-a97c-94d48951988e",
+    "name": "Refined Soft Cheese",
+    "price": 931,
+    "thumbnailUrl": "http://placeimg.com/400/400/food"
+}
+
+###
+
+# @name updateFood
+
+PATCH  {{baseUrl}}/{{resourceName}}/2fkdjHB
+Content-Type: application/json
+
+{
+    "name": "Món việt Nam",
+    "price": 1000,
+    "thumbnailUrl": "http://placeimg.com/400/400/food"
+}
+###
+
+# @name removeFood
+
+DELETE {{baseUrl}}/{{resourceName}}/7

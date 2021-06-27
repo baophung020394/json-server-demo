@@ -1,0 +1,67 @@
+{
+  "foods": [
+    {
+      "id": 1,
+      "name": "Phở",
+      "merchantId": 1,
+      "createdAt": 1616346754759,
+      "updatedAt": 1616346754759
+    },
+    {
+      "id": 2,
+      "name": " ăn gì kệ t",
+      "merchantId": 1,
+      "createdAt": 1616346754759,
+      "updatedAt": 1616346754759
+    },
+    {
+      "id": 3,
+      "name": "Cơm chiên dương châu",
+      "merchantId": 1,
+      "createdAt": 1616346754759,
+      "updatedAt": 1616346754759
+    },
+    {
+      "id": 4,
+      "name": "Ếch chiên",
+      "merchantId": 1,
+      "createdAt": 1616346754759,
+      "updatedAt": 1616346754759
+    },
+    {
+      "id": 5,
+      "name": "Bánh canh cua",
+      "merchantId": 1,
+      "createdAt": 1616346754759,
+      "updatedAt": 1616346754759
+    },
+    {
+      "id": 6,
+      "name": " ăn gì kệ tttttt",
+      "merchantId": 1,
+      "createdAt": 1616346754759,
+      "updatedAt": 1616346754759
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "status": "created",
+      "customerName": "Mr A",
+      "riderName": "Rider A",
+      "orderAddress": "Some place",
+      "merchantName": "Merchant A",
+      "marchantAddress": "Some place Merchant",
+      "dishes": [
+        {
+          "name": "Phở",
+          "price": "35000"
+        }
+      ],
+      "totalPrice": "35000",
+      "updatedTime": 1616346754759,
+      "createdAt": 1616346754759,
+      "updatedAt": 1616346754759
+    }
+  ]
+}

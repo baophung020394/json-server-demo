@@ -1,0 +1,43 @@
+@baseUrl=http://localhost:5000/api
+@resourceName=merchants
+# merchants
+
+# @name getAllMerchants
+GET {{baseUrl}}/{{resourceName}}
+# GET {{baseUrl}}/merchants/9a929e7a-9859-4e77-9177-9e2c95276ba8
+
+###
+
+# @name filterMerchants
+
+GET {{baseUrl}}/{{resourceName}}?id=56a694e5-2ab7-4cd8-a3e9-4385ff426988
+
+### 
+
+# @name addMerchants
+
+Post {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    "name": "Món 1"
+}
+
+###
+
+# @name updateFood
+
+PATCH  {{baseUrl}}/{{resourceName}}/6
+Content-Type: application/json
+
+{
+    "name":" ăn gì kệ tttttt"
+}
+
+###
+
+# @name removeFood
+
+DELETE {{baseUrl}}/{{resourceName}}/7
+
+
